@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faheem Editable Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Faheem Editable Resume</h1>
+    </header>
+    <main>
+        <section id="inputForm">
+            <h2>Enter Your Information</h2>
+            <form id="resumeForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="tagline">Tagline or Job Title:</label>
+                    <input type="text" id="tagline" name="tagline">
+                </fieldset>
+                <fieldset>
+                    <legend>Experience</legend>
+                    <div id="experienceList">
+                        <!-- Experience items will be added here dynamically -->
+                    </div>
+                    <button type="button" id="addExperience">Add Experience</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <div id="educationList">
+                        <!-- Education items will be added here dynamically -->
+                    </div>
+                    <button type="button" id="addEducation">Add Education</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <div id="skillsList">
+                        <!-- Skills will be added here dynamically -->
+                    </div>
+                    <button type="button" id="addSkill">Add Skill</button>
+                </fieldset>
+                <button type="submit">Generate Resume</button>
+            </form>
+        </section>
+        <section id="resumeOutput" style="display: none;">
+            <h2>Generated Resume</h2>
+            <div id="resumeContent"></div>
+            <button id="editResume">Edit Resume</button>
+            <button id="downloadResume">Download Resume</button>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
